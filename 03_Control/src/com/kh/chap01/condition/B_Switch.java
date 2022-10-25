@@ -72,8 +72,63 @@ public class B_Switch {
 			System.out.print("해당 과일은 품절 됐습니다.");
 			return;
 		}
-		
+
 		System.out.print(fruit + "의 가격은 " + price + "원 입니다.");
+
+	}
+
+	public void method3() {
+		// break;를 쓰지 않은 특이 케이스
+		// 등급별 권한
+		// 1등급: 관리, 글쓰기, 읽기 권한
+		// 2등급: 글쓰기, 읽기 권한
+		// 3등급: 읽기 권한
+
+		Scanner sc = new Scanner(System.in);
+		System.out.print("등급(정수) : ");
+		int level = sc.nextInt();
+
+		switch (level) {
+
+		case 1:
+			System.out.println("관리 권한");
+		case 2:
+			System.out.println("글쓰기 권한");
+		case 3:
+			System.out.println("읽기 권한");
+
+		}
+
+	}
+
+	public void method4() {
+		// 월을 입력 받아 해당 월의 마지막 날짜 출력
+
+		Scanner sc = new Scanner(System.in);
+		System.out.print("월을 입력하세요 : ");
+		int month = sc.nextInt();
+
+		switch (month) {
+		case 1:
+		case 3:
+		case 5:
+		case 8:
+		case 10:
+		case 12:
+			System.out.println("입력하신 월은 31일까지 있습니다.");
+			break;
+		case 2:
+			System.out.println("입력하신 월은 28일 또는 29일까지 있습니다.");
+			break;
+		case 4:
+		case 6:
+		case 9:
+		case 11:
+			System.out.println("입력하신 월은 30일까지 있습니다.");
+			break;
+			default: System.out.print("반드시 1월에서 12월 사이를 입력해야 합니당");
+			
+		}
 
 	}
 }
