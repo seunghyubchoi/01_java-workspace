@@ -4,7 +4,7 @@ import com.kh.variable.A_Variable;
 import com.kh.variable.B_KeyboardInput;
 import com.kh.variable.C_Printf;
 import com.kh.variable.D_Casting;
-
+ 
 public class Run {
 	public static void main(String [] args) {
 		A_Variable a = new A_Variable();

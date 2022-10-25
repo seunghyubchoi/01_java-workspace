@@ -12,6 +12,6 @@ public class VariablePractice3 {
 		System.out.println("면적 : " + (width * length));
 		System.out.println("둘레 : " + (width+length) * 2 );
 		
-		sc.close();
+		sc.close(); 
 	}
 }

@@ -17,7 +17,7 @@ public class OperatorPractice {
 		int num = sc.nextInt();
 		String result = (num > 0) ? "양수다" : (num < 0) ? "음수다" : "0이다";
 		System.out.print(result);
-	}
+	} 
 
 	public void practice3() {
 		Scanner sc = new Scanner(System.in);

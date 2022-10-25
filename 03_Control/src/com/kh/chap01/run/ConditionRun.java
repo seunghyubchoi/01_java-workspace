@@ -18,6 +18,6 @@ public class ConditionRun {
 //		b.method1();
 //		b.method2();
 //		b.method3();
-		b.method4();
+		b.method4();  
 	}
 }
