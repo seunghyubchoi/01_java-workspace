@@ -174,16 +174,40 @@ public class A_For {
 		System.out.print("2~9 사이의 정수를 입력  : ");
 		int dan = sc.nextInt();
 		if (dan > 1 && dan < 10) {
-			
+
 			for (int i = dan; i < 10; i++) {
 				for (int j = 1; j < 10; j++) {
-					
+
 					System.out.printf("%d x %d = %d\n", i, j, i * j);
 				}
 			}
 
 		} else {
 			System.out.println("잘못입력해썽");
+		}
+	}
+
+	public void method13() {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("2~9 사이의 정수를 입력  : ");
+		int dan = sc.nextInt();
+		if (dan > 1 && dan < 10) {
+			if (dan % 2 == 1) {
+				for (int i = dan; i < 10; i += 2) {
+					for (int j = 1; j < 10; j++) {
+						System.out.printf("%d x %d = %d\n", i, j, i * j);
+					}
+				}
+
+			} else {
+				for (int i = dan; i < 10; i += 2) {
+					for (int j = 1; j < 10; j++) {
+						System.out.printf("%d x %d = %d\n", i, j, i * j);
+					}
+				}
+			}
+		} else {
+			System.out.print("입력 값이 올바르지 않습니다.");
 		}
 	}
 }
