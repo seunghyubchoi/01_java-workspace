@@ -242,33 +242,55 @@ public class LoopPractice {
 				} else {
 					System.out.println(num1 + " / " + num2 + " = " + (num1 - num2));
 				}
-			
+
 			} else {
 				System.out.println("없는 연산자입니다. 다시 입력해주세요.");
 			}
 		}
 	}
+
 	public void practice13() {
 		Scanner sc = new Scanner(System.in);
 		System.out.print("정수 입력 : ");
 		int num = sc.nextInt();
-		
-		for(int i = 1; i <=num; i++) {
-			for(int j = 0; j < i; j++ ) {
+
+		for (int i = 1; i <= num; i++) {
+			for (int j = 0; j < i; j++) {
 				System.out.print('*');
-			} System.out.println();
+			}
+			System.out.println();
 		}
-		
+
 	}
+
 	public void practice14() {
 		Scanner sc = new Scanner(System.in);
 		System.out.print("정수 입력 : ");
 		int num = sc.nextInt();
-		
-		for(int i = 1; i <= num; i++) {
-			for(int j = num; j >= i; j--) {
+
+		for (int i = 1; i <= num; i++) {
+			for (int j = num; j >= i; j--) {
 				System.out.print('*');
-			} System.out.println();
+			}
+			System.out.println();
 		}
+	}
+
+	public void practice15() {
+		int[][] arr = new int[2][3];
+		int k = 10;
+		for (int i = 0; i < arr.length; i++) {
+			for (int j = 0; j < arr[i].length; j++) {
+				arr[i][j] = k; // 인덱스를 이용한 초기화
+				k += 10;
+			}
+		}
+		for (int i = 0; i < arr.length; i++) {
+			for (int j = 0; j < arr[i].length; j++) {
+				System.out.print(arr[i][j] + " ");
+			}
+			System.out.println();
+		}
+	System.out.println(arr[0].length);
 	}
 }
