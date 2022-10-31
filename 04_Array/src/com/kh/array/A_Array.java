@@ -284,26 +284,78 @@ public class A_Array {
 		// 변수는 size
 
 		Scanner sc = new Scanner(System.in);
-		System.out.print("배열의 길이입력 : ");
+		System.out.print("배열 길이 입력 : ");
 		int size = sc.nextInt();
-
 		int[] arr = new int[size];
-		
-		// 2. 반복문 활용해서 0 ~ 마지막 인덱스 까지
-		// 매번 1~100 사이의 랜덤 값 발생시켜 대입
 		for (int i = 0; i < arr.length; i++) {
 			arr[i] = (int) (Math.random() * 100 + 1);
 		}
 
-		// 3. 반복문 활용해서 출력 + 해당 그 인덱스에 담긴 값이 짝수인 값들의 총 합 출력
 		int sum = 0;
 		for (int i = 0; i < arr.length; i++) {
-			System.out.println("arr[" + i + "] : " + arr[i]);
-			if (arr[i] % 2 == 0) {// 짝수인 경우
-				// 누적합
+			System.out.println("arr [" + i + "] : " + arr[i]);
+			if (arr[i] % 2 == 0) {
 				sum += arr[i];
-			}	
+			}
 		}
-		System.out.println("해당 배열의 짝수의 합 : " + sum);
+		System.out.println("짝수의 합 : " + sum);
+
+		// 2. 반복문 활용해서 0 ~ 마지막 인덱스 까지
+		// 매번 1~100 사이의 랜덤 값 발생시켜 대입
+
+		// 3. 반복문 활용해서 출력 + 해당 그 인덱스에 담긴 값이 짝수인 값들의 총 합 출력
+
+		/*
+		 * Scanner sc = new Scanner(System.in); System.out.print("배열의 길이입력 : "); int
+		 * size = sc.nextInt();
+		 * 
+		 * int[] arr = new int[size];
+		 * 
+		 * 
+		 * for (int i = 0; i < arr.length; i++) { arr[i] = (int) (Math.random() * 100 +
+		 * 1); }
+		 * 
+		 * 
+		 * int sum = 0; for (int i = 0; i < arr.length; i++) { System.out.println("arr["
+		 * + i + "] : " + arr[i]); if (arr[i] % 2 == 0) {// 짝수인 경우 // 누적합 sum += arr[i];
+		 * } } System.out.println("해당 배열의 짝수의 합 : " + sum);
+		 * 
+		 */
 	}
+	
+	public void remind() {
+		/*
+		 * 변수만을 가지고 프로그래밍 했을 경우
+		
+		int age1 = 15;
+		int age2 = 23;
+		int age3 = 50;
+		int age4 = 34;
+		int age5 = 25;
+		
+		System.out.println(age1);
+		
+		for(int i = 1; i < 6; i++) {
+			System.out.println(agei); // age1 라는 이름의 변수를 찾고있음
+			System.out.println(age + i); // age 라는 이름의 변수를 찾고있음
+		}
+		 */
+		
+		
+		// 배열을 이용해 프로그래밍
+		int[] ages = new int[5];
+		ages[0]  = 15;
+		ages[1] = 23;
+		ages[2] = 50;
+		ages[3] = 34;
+		
+		// 인덱스 값 출력
+		int sum = 0;
+		for(int i = 0; i<ages.length; i++) {
+			System.out.println(ages[i]);
+			sum += ages[i];
+		}
+		System.out.println("총 나이의 합 : " + sum);
+	}
+
 }
