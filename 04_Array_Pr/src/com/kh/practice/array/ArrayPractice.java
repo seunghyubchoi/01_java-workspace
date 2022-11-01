@@ -367,64 +367,86 @@ public class ArrayPractice {
 
 	public void practice16() {
 		Scanner sc = new Scanner(System.in);
+		// 배열의 길이
 		System.out.print("배열의 크기를 입력하세요 : ");
 		int size = sc.nextInt();
+
+		// 입력한 길이 만큼의 문자열 선언
 		String[] arr = new String[size];
-		int arrLength = arr.length;
 		sc.nextLine();
-		int count = 1;
+		// 문자열 초기화
+		for (int i = 0; i < arr.length; i++) {
+			System.out.print(i + 1 + "번째 문자열 : ");
+			arr[i] = sc.nextLine();
+		}
+
 		while (true) {
+			System.out.print("더 값을 입력하시겠습니까? (Y/N) : ");
+			char ch = sc.nextLine().charAt(0);
+			if (ch == 'y' || ch == 'Y') {
+				System.out.print("더 입력하고 싶은 개수 : ");
+				int add = sc.nextInt();
+				String[] newArr = new String[arr.length + add];
+				System.arraycopy(arr, 0, newArr, 0, arr.length);
 
-			boolean result = true;
-			if (result == true) {
-				for (int i = 0; i < arr.length; i++) {
-					System.out.println(count + "번째 문자열 : ");
-					arr[i] = sc.nextLine();
-					count++;
+				sc.nextLine();
+
+				for (int i = arr.length; i < newArr.length; i++) {
+					System.out.print(i + 1 + "번째 문자열 : ");
+					newArr[i] = sc.nextLine();
 				}
+				arr = newArr; 
+			} else if (ch == 'n' || ch == 'N') {
 
-				System.out.println("더 값을 입력하시겠습니까?(Y/N)");
-				char ch = sc.nextLine().charAt(0);
-				if (ch == 'y' || ch == 'Y') {
-					System.out.println("더 입력하고 싶은 개수 : ");
-					int num = sc.nextInt();
-					sc.nextLine();
-					String[] newArr = new String[num];
-					for (int i = 0; i < newArr.length; i++) {
-						System.out.println(count + "번째 문자열 : ");
-						newArr[i] = sc.nextLine();
-						count++;
-						
+				for (int i = 0; i < arr.length; i++) {
+					if (i == 0) {
+						System.out.print(arr[i]);
+					} else {
+						System.out.print(',' + arr[i]);
 					}
-				} 
-				
-				
-				
-				
-				/*
-				 * int arrLength = arr.length; // 기존 배열을 새로운 배열로 복사(길이를 늘려줌) String[] newArr =
-				 * new String[arrLength + 1]; for (int i = 0; i < arrLength; i++) { newArr[i] =
-				 * arr[i]; } // 새로 늘어난 index에 값 추가 newArr[arrLength] = "D"; /*
-				 * 
-				 * 
-				 * /* } Scanner sc = new Scanner(System.in); // 문자열 길이 입력
-				 * System.out.print("배열의 크기를 입력하세요 : "); int size = sc.nextInt();
-				 * 
-				 * sc.nextLine();
-				 * 
-				 * // 문자열 배열 선언 String[] arr = new String[size]; int arrLength = arr.length int
-				 * count = 1; for (int i = 0; i < arr.length; i++) { System.out.println(count +
-				 * "번째 문자열 : "); arr[i] = sc.nextLine();
-				 * 
-				 * } System.out.print("더 값을 입력하시겠습니까?(Y/N)"); char answer =
-				 * sc.nextLine().charAt(0); if (answer == 'Y' || answer == 'y') {
-				 * System.out.print("더 입력하고 싶은 개수 : "); int num = sc.nextInt(); sc.nextLine();
-				 * String[] newArr = new String[arrLength + num]; for (int i = count; i <
-				 * arrlength; i++) { System.out.println(count + "번째 문자열 : "); newArr[i] =
-				 * sc.nextLine(); } } else if(answer == 'n' || answer == 'N') { for(int i = 0; i
-				 * <arr.length; i++) { System.out.print(arr[i] + " "); } } }
-				 */
+				}break;
 			}
 		}
 	}
 }
+/*
+ * int count = 1;
+ * 
+ * while (true) {
+ * 
+ * boolean result = true; if (result == true) { for (int i = 0; i < arr.length;
+ * i++) { System.out.println(count + "번째 문자열 : "); arr[i] = sc.nextLine();
+ * count++; }
+ * 
+ * System.out.println("더 값을 입력하시겠습니까?(Y/N)"); char ch = sc.nextLine().charAt(0);
+ * if (ch == 'y' || ch == 'Y') { System.out.println("더 입력하고 싶은 개수 : "); int num
+ * = sc.nextInt(); sc.nextLine(); String[] newArr = new String[num]; for (int i
+ * = 0; i < newArr.length; i++) { System.out.println(count + "번째 문자열 : ");
+ * newArr[i] = sc.nextLine(); count++;
+ * 
+ * } }
+ */
+/*
+ * 
+ * int arrLength = arr.length; // 기존 배열을 새로운 배열로 복사(길이를 늘려줌) String[] newArr =
+ * new String[arrLength + 1]; for (int i = 0; i < arrLength; i++) { newArr[i] =
+ * arr[i]; } // 새로 늘어난 index에 값 추가 newArr[arrLength] = "D"; /*
+ * 
+ * 
+ * } Scanner sc = new Scanner(System.in); // 문자열 길이 입력
+ * System.out.print("배열의 크기를 입력하세요 : "); int size = sc.nextInt();
+ * 
+ * sc.nextLine();
+ * 
+ * // 문자열 배열 선언 String[] arr = new String[size]; int arrLength = arr.length int
+ * count = 1; for (int i = 0; i < arr.length; i++) { System.out.println(count +
+ * "번째 문자열 : "); arr[i] = sc.nextLine();
+ * 
+ * } System.out.print("더 값을 입력하시겠습니까?(Y/N)"); char answer =
+ * sc.nextLine().charAt(0); if (answer == 'Y' || answer == 'y') {
+ * System.out.print("더 입력하고 싶은 개수 : "); int num = sc.nextInt(); sc.nextLine();
+ * String[] newArr = new String[arrLength + num]; for (int i = count; i <
+ * arrlength; i++) { System.out.println(count + "번째 문자열 : "); newArr[i] =
+ * sc.nextLine(); } } else if(answer == 'n' || answer == 'N') { for(int i = 0; i
+ * <arr.length; i++) { System.out.print(arr[i] + " "); } } }
+ */
