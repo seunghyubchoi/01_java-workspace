@@ -148,8 +148,8 @@ public class ArrayPractice {
 				int value = 1;
 				for (int i = 0; i < arr.length; i++) {
 					arr[i] = value;
-					if (i < arr.length / 2) { // i < 2 인덱스가 0,1 때는 value 증가
-						value++; // 무작정 value++; 해주면 안됨
+					if (i < arr.length / 2) { // i < arr.length == i < 2, 인덱스가 0,1 때는 value 증가
+						value++; // 
 					} else {
 						value--;
 					}

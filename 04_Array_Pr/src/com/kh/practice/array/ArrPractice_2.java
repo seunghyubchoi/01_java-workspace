@@ -1,5 +1,6 @@
 package com.kh.practice.array;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class ArrPractice_2 {
@@ -111,31 +112,165 @@ public class ArrPractice_2 {
 	}
 
 	public void practice8() {
-		// 정수 입력 받기
-
 		Scanner sc = new Scanner(System.in);
 		while (true) {
 			System.out.print("정수 : ");
 			int num = sc.nextInt();
-
-			if (num >= 3 && num % 2 != 0) {
+			if (num >= 3 && num % 2 == 1) {
 				int[] arr = new int[num];
-				int value = 1;
-				// 오름차순
+				int count = 1;
 				for (int i = 0; i < arr.length; i++) {
-					arr[i] = value;
 					if (i < arr.length / 2) {
-						value++;
+						arr[i] = count++;
 					} else {
-						value--;
+						arr[i] = count--;
 					}
 					System.out.print(arr[i] + " ");
 				}
 				break;
 			} else {
-
 				System.out.println("다시 입력하세요");
+				continue;
 			}
+		}
+	}
+
+	public void practice9() {
+		Scanner sc = new Scanner(System.in);
+
+		String arr[] = { "양파", "스펀지", "해적왕" };
+
+		System.out.print("치킨 이름을 입력하세요 : ");
+		String name = sc.nextLine();
+
+		for (int i = 0; i < arr.length; i++) {
+			if (arr[i].equals(name)) {
+				System.out.print(name + "치킨 배달 가능");
+				return;
+			}
+		}
+		System.out.print(name + "치킨은 없는 메뉴입니다.");
+	}
+
+	public void practice9_1() {
+		Scanner sc = new Scanner(System.in);
+		// 배열 생성
+		String[] chickens = { "황금올리브", "허니콤보", "뿌링클", "고추바사삭" };
+
+		System.out.print("치킨 이름을 입력하세요 :");
+		String chicken = sc.nextLine();
+
+		int count = 1;
+		for (int i = 0; i < chickens.length; i++) {
+			if (chicken.equals(chickens[i])) {
+				count++;
+			}
+		}
+		if (count == 1) {
+			System.out.println(chicken + "치킨 배달 가능");
+		} else {
+			System.out.println(chicken + "치킨 배달불가");
+		}
+	}
+
+	public void practice10() {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("주민등록번호(-포함) : ");
+		String number = sc.nextLine();
+		char[] arr = new char[number.length()];
+		for (int i = 0; i < arr.length; i++) {
+			arr[i] = number.charAt(i);
+		}
+		char[] arr2 = arr.clone();
+		for (int i = 8; i < arr2.length; i++) {
+			arr2[i] = '*';
+		}
+		for (int i = 0; i < arr2.length; i++) {
+			System.out.print(arr2[i]);
+		}
+		// System.arraycopy(arr, 0, arr2, 0, arr.length);
+	}
+
+	public void practice11() {
+		int[] arr = new int[10];
+		for (int i = 0; i < arr.length; i++) {
+			arr[i] = (int) (Math.random() * 10 + 1);
+			System.out.print(arr[i] + " ");
+		}
+	}
+
+	public void practice12() {
+		int[] arr = new int[10];
+		for (int i = 0; i < arr.length; i++) {
+			arr[i] = (int) (Math.random() * 10 + 1);
+			for (int j = 0; j < i; j++) {
+				if (arr[i] == arr[j]) {
+					i--;
+				}
+			}
+		}
+		for (int i = 0; i < arr.length; i++) {
+			System.out.print(arr[i] + " ");
+		}
+	}
+
+	public void practice13() {
+		int[] arr = new int[6];
+		for (int i = 0; i < arr.length; i++) {
+			arr[i] = (int) (Math.random() * 45 + 1);
+			for (int j = 0; j < i; j++) {
+				if (arr[i] == arr[j]) {
+					i--;
+				}
+			}
+		}
+		Arrays.sort(arr);
+		for (int i = 0; i < arr.length; i++) {
+			System.out.print(arr[i] + " ");
+		}
+	}
+
+	public void practice14() {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("배열의 크기를 입력하세요 : ");
+		int size = sc.nextInt();
+		sc.nextLine();
+		String[] arr = new String[size];
+		for (int i = 0; i < arr.length; i++) {
+			System.out.print(i + 1 + "번째 문자열 : ");
+			arr[i] = sc.nextLine();
+		}
+		while (true) {
+			System.out.print("더 값을 입력하시겠습니까?(Y/N) : ");
+			char ch = sc.nextLine().charAt(0);
+			if (ch == 'y' || ch == 'Y') {
+				System.out.print("더 입력하고 싶은 개수 : ");
+				int size2 = sc.nextInt();
+
+				String[] arrNew = new String[arr.length + size2];
+				System.arraycopy(arr, 0, arrNew, 0, arr.length);
+
+				sc.nextLine();
+
+				for (int i = arr.length; i < arrNew.length; i++) {
+					System.out.print(i + 1 + "번째 문자열 : ");
+					arrNew[i] = sc.nextLine();
+				}
+				arr = arrNew;
+			} else {
+				System.out.print('[');
+				for (int i = 0; i < arr.length; i++) {
+					if (i == 0) {
+						System.out.print(arr[i]);
+					} else {
+						System.out.print(", " + arr[i]);
+					}
+
+				}
+				System.out.print(']');
+				break;
+			}
+
 		}
 	}
 }
