@@ -64,6 +64,17 @@ public class AbstractionRun {
 	 * 
 	 */
 	public static void main(String[] args) {
+		Student s = new Student();
+		
+		Student s1 = new Student("오동동", 195.5, 100);
+		System.out.println(s1.information());
+		
+		Student s2 = new Student("오아리", 84, 233.3, 100, 100);
+		System.out.println(s2.information());
+		
+
+		
+		/*
 		// 클래스(틀) 만든 후 학생 객체 만들어보기
 
 		// 자바에서 객체로 만들기 위해서는 new 라는 키워드를 통해 Heap 영역에 먼저 생성해야 함!! (공간 할당)
@@ -102,31 +113,6 @@ public class AbstractionRun {
 		 * => 캡슐화 작업을 할꺼임!!
 		 * 
 		 */
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 		
 		
 		

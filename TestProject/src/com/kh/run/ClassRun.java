@@ -11,6 +11,6 @@ public class ClassRun {
 		System.out.println("이름 : " + p.getpName());
 		System.out.println("가격 : " + p.getPrice());
 		System.out.println("브랜드 : " + p.getBrand());
-		
+	
 	}
 }
