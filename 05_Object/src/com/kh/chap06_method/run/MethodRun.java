@@ -6,6 +6,8 @@ import com.kh.chap06_method.controller.*;
 public class MethodRun {
 
 	public static void main(String[] args) {
+		
+		/*
 		//===========Non Static Method============
 		NonStaticMethod n = new NonStaticMethod();
 		
@@ -55,8 +57,23 @@ public class MethodRun {
 		System.out.println(StaticMethod.method2()); // 뭊역원 sysout으로 리턴 값 보여주쟝
 		StaticMethod.method3("호랑이");
 		System.out.println(StaticMethod.method4("사자", "호랑이"));
+		*/
 		
-	
+		
+		// ======== Overloading =======
+		OverloadingTest ot = new OverloadingTest();
+		ot.test();
+		ot.test(10);
+		ot.test(10, "주지훈");
+		ot.test("장원영", 15);
+		ot.test("ㅎㅅㅎ");
+		
+		
+		// 오버로딩의 대표적인 예: print()
+		System.out.print(10);
+		System.out.print("ㄴㄴ");
+		System.out.print("0.0");
+		
 	}
 
 }
