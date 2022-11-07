@@ -1,14 +1,15 @@
 package com.kh.chap03_class.model.vo;
 
 public class Person {
+	private String id;
 	private String name;
 	private int age;
 	private double height;
 	private char gender;
-<<<<<<< Updated upstream
+	private String pwd;
 	private int birth;
 	
-=======
+
 	private String phone;
 	private String email;
 	
@@ -47,7 +48,7 @@ public class Person {
 		this.pwd = pwd;
 	}
 
->>>>>>> Stashed changes
+
 	public void setName(String name) {
 		this.name = name;
 	}
