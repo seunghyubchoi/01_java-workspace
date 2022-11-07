@@ -4,24 +4,34 @@ import com.kh.chap03_class.model.vo.*;
 
 public class ClassRun {
 	public static void main(String[] args) {
-		Person p1 = new Person();
-		p1.setName("케로로");
-		p1.setAge(1900);
-		p1.setHeight(120.5);
-		p1.setGender('M');
-		p1.setBirth(118);
+		// 첫번째 방법 : 기본생성자로 생성 후 setter 메소드 이용해서 값 초기화
+		/*
+		 * Person p1 = new Person(); p1.setName("케로로"); p1.setAge(1900);
+		 * p1.setHeight(120.5); p1.setGender('M'); p1.setBirth(118);
+		 * System.out.println(p1.getName()); System.out.println(p1.getAge());
+		 * System.out.println(p1.getHeight()); System.out.println(p1.getGender());
+		 * System.out.println(p1.getBirth());
+		 */
 
-		System.out.println(p1.getName());
-		System.out.println(p1.getAge());
-		System.out.println(p1.getHeight());
-		System.out.println(p1.getGender());
-		System.out.println(p1.getBirth());
-
-		Person p2 = new Person("보노보노", "pptmaster", 30, "02-3288-8080");
+		// 두번째 방법 : 매개변수 생성자로 생성과 동시에 값 초기화
+		Product p1 = new Product("갤럭디", 1200000, "담덩");
+		p1.setPrice(120);
+		System.out.println(p1.information());
+		
+		
+		Product p2 = new Product("어른폰", 1300000, "어른플");
 		System.out.println(p2.information());
 
-		Person p3 = new Person("bonobono", "pptmaster", "보노보노", 30, 'M', "02-3288-8080", "bono@bono.com");
-		System.out.println(p3.information());
+		/*
+		 * Person p2 = new Person("보노보노", "pptmaster", 30, "02-3288-8080");
+		 * System.out.println(p2.information());
+		 */
+
+		/*
+		 * Person p3 = new Person("bonobono", "pptmaster", "보노보노", 30, 'M',
+		 * "02-3288-8080", "bono@bono.com"); 
+		 * System.out.println(p3.information());
+		 */
 
 		// 생성 후에 필드에 담긴 값을 곧바로 알아보면
 		// JVM이 초기화(값 세팅)까지 진행해줬음!!

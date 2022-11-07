@@ -49,9 +49,7 @@ public class Student { // 학생을 추상화해서 만든 클래스 (완벽한 
 	}
 	
 	public Student(String name, int age, double height, int korScore, int matScore) {
-		this.name = name;
-		this.age = age;
-		this.height = height;
+		this(name, height, korScore);
 		this.korScore = korScore;
 		this.matScore = matScore;
 	}
