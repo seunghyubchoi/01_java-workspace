@@ -4,10 +4,10 @@ public class Run {
 	public static void main(String[] args) {
 		CompExample ce = new CompExample();
 //		ce.practice1();
-//		ce.practice2();
+		ce.practice2();
 //		ce.practice3();
 //		ce.practice4();
-		ce.upDown();
+//		ce.upDown();
 //		ce.rps();
 	}
 }

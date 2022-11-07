@@ -3,27 +3,24 @@ package com.kh.chap05_constructor.model.vo;
 public class ConstructorPr {
 	// 필드부
 
-	
-	public ConstructorPr() {
-		
-	}
-	
-	
 	private String animeTitle;
 	private String name;
 	private int age;
 	private double height;
 
 	// 생성자부
-	public ConstructorPr(String animeTitle, String name, int age, double height){
+	public ConstructorPr() {
+		this("나루토", "사스케", 15, 199);
+	}
+
+	public ConstructorPr(String animeTitle, String name, int age, double height) {
 		this.animeTitle = animeTitle;
 		this.name = name;
 		this.age = age;
 		this.height = height;
 	}
-	
-	
-	//메소드부
+
+	// 메소드부
 
 	public void setAnimeTitle(String animeTitle) {
 		this.animeTitle = animeTitle;
@@ -57,6 +54,7 @@ public class ConstructorPr {
 	public double getHeight() {
 		return height;
 	}
+
 	public String information() {
 		return "만화 제목 : " + animeTitle + " 이름 : " + name + " 나이 : " + age + " 키 : " + height;
 	}

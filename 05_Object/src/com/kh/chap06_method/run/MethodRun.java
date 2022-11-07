@@ -7,7 +7,7 @@ public class MethodRun {
 
 	public static void main(String[] args) {
 		
-		/*
+		
 		//===========Non Static Method============
 		NonStaticMethod n = new NonStaticMethod();
 		
@@ -57,7 +57,7 @@ public class MethodRun {
 		System.out.println(StaticMethod.method2()); // 뭊역원 sysout으로 리턴 값 보여주쟝
 		StaticMethod.method3("호랑이");
 		System.out.println(StaticMethod.method4("사자", "호랑이"));
-		*/
+		
 		
 		
 		// ======== Overloading =======
