@@ -23,9 +23,7 @@ System.out.println("========================================");
 		System.out.println(p1.information());
 		System.out.println(p2.information());
 		System.out.println(p3.information());
-		
-		
-	
+			
 		//p1.setPrice((int) (p1.getPrice() + (double)((p1.getPrice() * p1.getTax()))));
 		p1.setPrice((p1.getPrice() + (int)(p1.getPrice() * p1.getTax())));
 		p2.setPrice((int) (p2.getPrice() + (double)((p2.getPrice() * p2.getTax()))));
