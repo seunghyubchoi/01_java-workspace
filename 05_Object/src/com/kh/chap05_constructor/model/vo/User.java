@@ -44,7 +44,9 @@ public class User {
 	public User(String userId, String userPwd, String userName, int age, char gender) {
 
 		/*
-		 * this.userId = userId; this.userPwd = userPwd; this.userName = userName;
+		 * this.userId = userId; 
+		 * this.userPwd = userPwd; 
+		 * this.userName = userName;
 		 */
 
 		this(userId, userPwd, userName);
