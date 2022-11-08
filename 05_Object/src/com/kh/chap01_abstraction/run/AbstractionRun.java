@@ -64,6 +64,47 @@ public class AbstractionRun {
 	 * 
 	 */
 	public static void main(String[] args) {
+		
+		
+		Student[] s = new Student[3];
+		
+		s[0] = new Student();
+		s[1] = new Student("이기영", 133.3, 100);
+		s[2] = new Student("이기철", 15, 160, 100, 100);
+		
+		s[0].setName("땡구");
+		s[0].setAge(3);
+		s[0].setHeight(87.5);
+		s[0].setKorScore(0);
+		s[0].setMatScore(0);
+		
+		s[1].setAge(12);
+		s[1].setMatScore(100);
+		
+		
+		for(int i = 0; i < s.length; i++) {
+			System.out.println(s[i].information());
+		}
+		
+		
+		System.out.println("=========================================================");
+	
+		
+		int korSum = 0;
+		int matSum = 0;
+		for(int i = 0; i < s.length; i++) {
+			korSum += s[i].getKorScore();
+			matSum += s[i].getMatScore();
+		}
+		
+		int korAv = korSum / s.length;
+		int matAv = matSum / s.length;
+		
+		System.out.println("국어 점수 평균 : " + korAv);
+		System.out.println("수학 점수 평균 : " + matAv);
+		
+		
+		/*
 		Student s = new Student();
 		
 		Student s1 = new Student("오동동", 195.5, 100);
@@ -71,7 +112,7 @@ public class AbstractionRun {
 		
 		Student s2 = new Student("오아리", 84, 233.3, 100, 100);
 		System.out.println(s2.information());
-		
+		*/
 
 		
 		/*

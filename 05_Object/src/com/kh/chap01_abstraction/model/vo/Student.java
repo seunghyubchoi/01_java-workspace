@@ -55,6 +55,46 @@ public class Student { // 학생을 추상화해서 만든 클래스 (완벽한 
 	}
 
 	
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+
+	public double getHeight() {
+		return height;
+	}
+
+	public void setHeight(double height) {
+		this.height = height;
+	}
+
+	public int getKorScore() {
+		return korScore;
+	}
+
+	public void setKorScore(int korScore) {
+		this.korScore = korScore;
+	}
+
+	public int getMatScore() {
+		return matScore;
+	}
+
+	public void setMatScore(int matScore) {
+		this.matScore = matScore;
+	}
+
 	public String information() {
 		return "이름 : " + name + " 나이 : " + age + " 키 : " + height + " 국어점수 : " + korScore + " 수학점수 : " + matScore;
 	}
