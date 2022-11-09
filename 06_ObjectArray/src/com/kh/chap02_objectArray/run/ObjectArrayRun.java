@@ -9,6 +9,13 @@ public class ObjectArrayRun {
 		arr[0] = 10;
 		arr[1] = 20;
 		arr[2] = 30;
+		
+		// for loop 단순 for문
+		for( int i = 0; i < arr.length; i++) {
+			System.out.println(arr[i]);
+		}
+		
+		
 	
 	Phone[] phones = new Phone[3];
 	System.out.println(phones);
@@ -28,6 +35,7 @@ public class ObjectArrayRun {
 	
 	// 총가격과 평균가격
 	int total = 0;
+	
 	for(int i = 0; i < phones.length; i++) {
 		System.out.println(phones[i].information());
 		// 누적합
