@@ -56,6 +56,7 @@ public class Vehicle {
 	public void howToMove() {
 		System.out.println("움직인다.");
 	}
-	
-	
+	public String information(int a) {
+		return "name : " + Vname + ", mileage : " + mileage + ", kind : " + kind;
+	}
 }

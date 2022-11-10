@@ -40,7 +40,7 @@ public class Book /* extends Object */ {
 		this.price = price;
 	}
 
-	// information 만들지 않아
+	// 
 	/*
 	 * 오버라이딩 자식클래스가 상속받고 있는 부모클래스의 메소드를 재정의(재작성)하는 것 부모가 제공하는 메소드를 자식이 일부 고쳐서 사용하겠다는
 	 * 의미 자식 객체를 통해 실행시 자식메소드가 우선권을 가짐
@@ -61,5 +61,8 @@ public class Book /* extends Object */ {
 		// @Override 표시를 쓰면 부모의 클래스에 있는 걸 가져온다는 의미로 부모클래스는 Object, 자식클래스는 부모클래스에서 가져옴을 의미
 		return "title : " + title + ", author : " + author + ", price : " + price;
 	}
+	
+	
+
 
 }

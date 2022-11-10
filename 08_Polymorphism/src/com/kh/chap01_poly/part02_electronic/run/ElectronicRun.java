@@ -12,7 +12,7 @@ public class ElectronicRun {
 		// Run 클래스는 납품업체라고 생각
 		// ElectronicShop은 용산 전자상가에 있는 가게
 		
-		// 1. 다형성 ㅈ가용 안 했을 경우(ElectronicShop1)
+		// 1. 다형성 사용 안 했을 경우(ElectronicShop1)
 		ElectronicShop1 es = new ElectronicShop1();
 		// 객체 생성하는 순간 해당 클래스에 제시된 세 가지의 필드가 메모리 상에 할당
 		

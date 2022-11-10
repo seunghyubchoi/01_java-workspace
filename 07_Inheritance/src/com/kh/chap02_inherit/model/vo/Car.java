@@ -31,9 +31,9 @@ public class Car extends Vehicle {
 
 	}
 
-	@Override
-	public String toString() {
-		return "Car [tire=" + tire + "]";
+	
+	public String information(int a) {
+		return super.information() + ", tire : " + tire;
 	}
 
 	

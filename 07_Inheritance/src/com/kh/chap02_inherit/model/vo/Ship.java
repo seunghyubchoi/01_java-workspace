@@ -28,5 +28,7 @@ public class Ship extends Vehicle {
 	public void howToMove() {
 		System.out.println("프로펠러를 돌려서 움직인다.");
 	}
+	
+	
 
 }
