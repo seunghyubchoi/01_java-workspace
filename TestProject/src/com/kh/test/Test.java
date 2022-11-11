@@ -11,7 +11,7 @@ class Child2 extends Parents{
     public String x(){return "B2.x";}
 }
 
-public class test {
+public class Test {
     public static void main(String[] args) {
     	Parents obj = new Child1();
     	Parents obj2 = new Child2();
