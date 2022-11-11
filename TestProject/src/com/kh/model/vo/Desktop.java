@@ -1,12 +1,10 @@
 package com.kh.model.vo;
 
 public class Desktop extends Electronic{
-
 	public static final String CPU = "intel";
-	
 	private String graphic;
 	
-	public Desktop() {
+	public Desktop(){
 		
 	}
 

@@ -6,6 +6,7 @@ public class Electronic {
 	private int price;
 	
 	public Electronic() {
+		
 	}
 
 	public Electronic(String brand, String name, int price) {

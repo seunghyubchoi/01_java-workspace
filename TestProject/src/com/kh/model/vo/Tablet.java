@@ -3,9 +3,7 @@ package com.kh.model.vo;
 public class Tablet extends Electronic{
 	private boolean penFlag;
 	
-	public Tablet() {
-		
-	}
+	public Tablet() {}
 
 	public Tablet(String brand, String name, int price, boolean penFlag) {
 		super(brand, name, price);
@@ -22,7 +20,7 @@ public class Tablet extends Electronic{
 
 	@Override
 	public String toString() {
-		return super.toString() + ", penFlag = " + penFlag;
+		return super.toString() + ", penFlag = " + (penFlag ? "있음" : "없음");
 	}
 	
 	
