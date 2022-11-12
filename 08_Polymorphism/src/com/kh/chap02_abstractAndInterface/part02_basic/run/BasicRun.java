@@ -9,7 +9,7 @@ public class BasicRun {
 
 	public static void main(String[] args) {
 
-		// Person p = new Person();
+		// Person p = new Person(); 미완성 클래스인 추상 클래스는 객체 생성 불가
 
 		/*
 		 * Person mom = new Mother("김엄마", 50, 70, "출산"); Person baby = new Baby("김아기",
