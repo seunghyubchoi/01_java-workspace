@@ -18,7 +18,7 @@ public class StringRun {
 		LocalDate now = LocalDate.now();
 		
 		C_StringTokenizerTest c = new C_StringTokenizerTest();
-		c.method();
+		//c.method();
 		/*
 		System.out.println(now);
 		int thisYear = now.getYear();

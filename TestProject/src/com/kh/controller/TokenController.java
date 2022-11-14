@@ -12,7 +12,7 @@ public class TokenController {
 		String stn2= "";
 		
 		while(stn.hasMoreTokens()) {
-			stn2 += stn;
+			stn2 += stn.nextToken();
 		}
 				
 		return stn2;
@@ -20,9 +20,9 @@ public class TokenController {
 
 	public String firstCap(String input) {
 		// 매개변수로 받아온 input의 첫 번째 글자만 대문자로 바꾼 문자열 반환
-		String input2 = input.replace(input.charAt(0), input.toUpperCase().charAt(0));
+		input = input.toUpperCase().substring(0, 1) + input.substring(1);
 		
-		return input2;
+		return input;
 	}
 
 	public int findChar(String input, char one) {
