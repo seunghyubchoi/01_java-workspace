@@ -48,9 +48,12 @@ public class TokenMenu { // start of class
 
 		System.out.println("토큰 처리 전 글자 : " + str);
 		System.out.println("토큰 처리 전 개수 : " + str.length());
-		System.out.println("토큰 처리 후 글자 : " + tc.afterToken(str));
-		System.out.println("토큰 처리 후 개수 : " + tc.afterToken(str).length());
-		System.out.println("모두 대문자로 변환 : " + tc.afterToken(str).toUpperCase());
+		
+		String token = tc.afterToken(str);
+		
+		System.out.println("토큰 처리 후 글자 : " + /*tc.afterToken(str)*/ token);
+		System.out.println("토큰 처리 후 개수 : " + token.length());
+		System.out.println("모두 대문자로 변환 : " + token.toUpperCase());
 
 	} // end of tokenMenu()
 
