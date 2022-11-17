@@ -1,8 +1,11 @@
 package com.kh.chap02_inherit.run;
 
+import java.util.ArrayList;
+
 import com.kh.chap02_inherit.model.vo.Airplane;
 import com.kh.chap02_inherit.model.vo.Car;
 import com.kh.chap02_inherit.model.vo.Ship;
+import com.kh.chap02_inherit.model.vo.Vehicle;
 
 public class InheritRun {
 	public static void main(String[] args) {
@@ -20,6 +23,34 @@ public class InheritRun {
 		car.howToMove();
 		ship.howToMove();
 		airplane.howToMove();
+		
+		
+		System.out.println("=====================================================================");
+
+		ArrayList<Vehicle> list = new ArrayList<Vehicle>();
+		list.add(new Car("무당벌레차", 50, "소형차", 5));
+		list.add(new Ship("타이타닉", 95000, "유람선", 38));
+		list.add(new Airplane("종이비행기", 0.01, "경비행기", 3, 10));
+		
+		System.out.println("일반 for문");
+		for(int i = 0; i < list.size(); i++) {
+			System.out.println(list.get(i).information());
+		}
+		
+		
+		System.out.println("향상된 for문");
+		for(Vehicle v : list) {
+			System.out.println(v.information());
+		}
+		
+		
+		
+		System.out.println("=====================================================================");
+		
+		
+		
+		
+		
 		
 		/*
 		 * 상속의 장점
@@ -51,7 +82,12 @@ public class InheritRun {
 		
 		// Airplane 배열 생성
 		Airplane[] aArr = new Airplane[3];
-
+		
+		for(int i = 2; i <= 9; i++) {
+			for(int j = 1; j <= 9; j++) {
+				System.out.println(i + "x" + j + "=" + i*j);
+			}
+		}
 		
 	}
 

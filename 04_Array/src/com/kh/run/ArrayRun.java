@@ -25,6 +25,6 @@ public class ArrayRun {
 //		b.method2();
 //		b.method3();
 //		b.method4();
-		b.method5();
+//		b.method5();
 	}
 }
