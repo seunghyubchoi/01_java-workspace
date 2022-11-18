@@ -43,7 +43,7 @@ public class ExceptionRun {
 		// a.method3();
 		
 		B_CheckedException b = new B_CheckedException();
-		b.method1();
+		//b.method1();
 	}
 
 }
