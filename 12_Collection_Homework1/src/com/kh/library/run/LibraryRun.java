@@ -56,7 +56,7 @@ public class LibraryRun {
 			System.out.println("===============================");
 
 			Scanner sc = new Scanner(System.in);
-			System.out.print("메뉴번호를 입력해주세요 : ");
+			System.out.print("메뉴번호를 입력해주세요 : "); // try로 만들어보쟈
 			int menu = sc.nextInt(); // 메뉴 번호 입력
 			switch (menu) {
 			case 1:
