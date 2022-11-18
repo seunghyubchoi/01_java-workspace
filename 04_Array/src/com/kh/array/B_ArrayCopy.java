@@ -114,7 +114,7 @@ public class B_ArrayCopy {
 
 	}
 
-	public void method4() {
+	public void method4() {	
 		// 3. Arrays 클래스에서 제공하는 copyOf() 메소드 사용
 		int[] origin = { 1, 2, 3, 4, 5 };
 		// 복사본 배열 = Array.copyOf(원본배열, 복사할 길이);

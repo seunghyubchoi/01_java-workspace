@@ -17,7 +17,6 @@ public class C_DoWhile {
  * for / while문 경우, 조건 검사 후 true여야만 실행
  * do-while문 경우, 일단 한 번은 실행
  */
-	
 	public void method1() {
 		int num = 1;
 		do {
