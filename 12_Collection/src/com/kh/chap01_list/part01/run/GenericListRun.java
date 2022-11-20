@@ -19,12 +19,11 @@ public class GenericListRun {
 		
 		list.add(1, new Music("진심이 담긴 노래", "케이시"));
 		
-		System.out.println(list);
-		
+		System.out.println("after add" + list);
 	
-		System.out.println("==============List sub===============");
 		List<Music> sub = list.subList(0, 2);
-		
+		System.out.println("after sub" + sub);
+				
 		list.addAll(sub);
 		System.out.println(list);
 		

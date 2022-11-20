@@ -99,7 +99,7 @@ public class BookController implements BookManager {
 		ArrayList<Book> mList = new ArrayList<Book>();
 
 		for (Book b : bList) {
-			if (((Magazine) b).getYear() == year) {
+			if ( ((Magazine) b).getYear() == year) {
 				mList.add(b);
 			}
 		}
