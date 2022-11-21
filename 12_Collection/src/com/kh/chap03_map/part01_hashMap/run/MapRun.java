@@ -95,7 +95,7 @@ public class MapRun {
 		
 		System.out.println("=== entrySet() 이용 ===");
 		System.out.println();
-		// 2. entrySet() 이용하는 방법
+		// 
 
 		// 1) hm.entrySet() : Set
 		Set<Entry<String, Snack>> entrySet = hm.entrySet(); // Entry(K+V)

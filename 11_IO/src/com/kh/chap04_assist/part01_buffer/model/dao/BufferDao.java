@@ -35,8 +35,7 @@ public class BufferDao {
 		// BufferedWriter bw = null;
 
 		/*
-		 * try { // 위의 두 줄을 한 줄로 작성 bw = new BufferedWriter(new
-		 * FileWriter("c_buffer.txt"));
+		 * try { // 위의 두 줄을 한 줄로 작성 bw = new BufferedWriter(newFileWriter("c_buffer.txt"));
 		 * 
 		 * // write 메소드 이용해서 데이터 출력 bw.write("안녕하세요\n"); bw.write("반갑습니다.");
 		 * bw.newLine(); // 추가적인 메소드 활용가능 => 개행 bw.write("저리가세요");

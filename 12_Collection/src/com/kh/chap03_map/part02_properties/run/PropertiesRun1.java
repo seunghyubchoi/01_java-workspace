@@ -17,8 +17,10 @@ public class PropertiesRun1 {
 	Properties prop = new Properties();
 	
 	/*
-	prop.put("다이제", new Snack("초코맛",1500));// 객체를 String 으로 바꿀 수 없어서 오류 생김
+	prop.put("다이제", new Snack("초코맛",1500));
+	
 	prop.put("새우깡", new Snack("짠맛",500));
+	// 객체를 String 으로 바꿀 수 없어서 오류 생김
 	
 	System.out.println(prop);
 	System.out.println(prop.get("다이제"));

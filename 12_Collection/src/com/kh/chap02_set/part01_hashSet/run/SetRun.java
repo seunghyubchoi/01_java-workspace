@@ -74,9 +74,9 @@ public class SetRun {
 		System.out.println("=================================");
 
 		// 3. Iterator = 반복자를 이용해서 순차적으로 접근하는 방법
-		Iterator<Student> it = hs2.iterator(); // 넣어주고
+		Iterator<Student> it = hs2.iterator(); // hs2를 iterator에 넣어준다
 		while (it.hasNext()) { // 어떤 요소가 있을 때 까지 계속 돌아감
-			Student s = it.next(); // 가지고 나와서
+			Student s = it.next(); // iterator에서 가지고 나와서
 			System.out.println(s); // 출력
 		}
 		// it.next(); // 가지고 나올게 없는데 출력하니까 java.util.NoSuchElementException
