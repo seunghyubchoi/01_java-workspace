@@ -42,7 +42,7 @@ public class Controller implements MethodList {
 		String number = dic.get(name);
 		if (number == null) {
 			System.out.print(name + "는 없는 단어 입니다.");
-		}
+		} 
 		return number;
 
 	}
