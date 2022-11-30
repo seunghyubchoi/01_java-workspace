@@ -99,6 +99,9 @@ public class B_StringMethodTest {
 		// 10. 문자열.toCharArray() : char[]
 		char[] arr = str1.toCharArray();
 		System.out.println(arr[0]);
+		//for(int i = 0; i < arr.length; i++) {
+		//	System.out.println(arr[i]);
+		//}
 		System.out.println();
 		System.out.println("11. String.valueOf(char[] data");
 		// 11. String.valueOf(char[] data)

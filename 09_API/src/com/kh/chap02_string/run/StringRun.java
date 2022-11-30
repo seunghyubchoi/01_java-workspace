@@ -14,11 +14,11 @@ public class StringRun {
 		// a.method2();
 		
 		B_StringMethodTest b = new B_StringMethodTest();
-		b.method();
-		LocalDate now = LocalDate.now();
+		//b.method();
+		//LocalDate now = LocalDate.now();
 		
 		C_StringTokenizerTest c = new C_StringTokenizerTest();
-		//c.method();
+		c.method();
 		/*
 		System.out.println(now);
 		int thisYear = now.getYear();

@@ -52,6 +52,8 @@ public class WrapperRun {
 		// 1. 해당 그 Wrapper 클래스에서 제공하는 xxxValue() 메소드를 통해
 		// double, boolean 다 됨
 		int num3 = i3.intValue();
+		System.out.println(i3);
+		System.out.println("num3 : "+num3);
 		int num4 = i4.intValue();
 
 		// 2. 메소드 사용하지 않고 바로 대입하는 방법(AutoUnBoxing)

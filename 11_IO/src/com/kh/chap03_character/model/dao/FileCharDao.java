@@ -10,10 +10,8 @@ public class FileCharDao {
 	/*
 	 * "문자 기반 스트림"을 가지고 입출력 해보기
 	 * 
-	 * - 문자스트림 : 데이터를 2바이트 단위로 전송하는 통로 
-	 * - 기반스트림 : 외부 매체왜 직접적으로 연결되는 통로 
-	 * - xxxReader : 입력용 스트림
-	 * = xxxWriter : 출력용 스트림
+	 * - 문자스트림 : 데이터를 2바이트 단위로 전송하는 통로 - 기반스트림 : 외부 매체왜 직접적으로 연결되는 통로 - xxxReader :
+	 * 입력용 스트림 = xxxWriter : 출력용 스트림
 	 * 
 	 * 
 	 */
@@ -60,10 +58,10 @@ public class FileCharDao {
 
 			// 2. read 메소드 이용해서 읽어들이자(정수 값)
 			// 파일의 끝을 만나는 순간 -1을 출력
-				
+
 			int value = 0;
 			while ((value = fr.read()) != -1) {
-				System.out.print((char)value);
+				System.out.print((char) value);
 			}
 
 		} catch (FileNotFoundException e) {
